@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>HVAC Services | Peterson Air Conditioning | Mesa & Phoenix AZ</title>
+  <meta name="description" content="Expert air conditioning repair, installation, seasonal tune-ups, heat pump services, and duct sealing across Mesa, Gilbert, Chandler, and Phoenix. Call (480) 555-0199." />
+  <meta name="keywords" content="HVAC services Mesa, AC repair Phoenix, emergency AC replacement Arizona, heat pump installation, AC tune-up Mesa AZ, Peterson Air Conditioning services" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0b1d33',
+              dark: '#081424',
+              blue: '#0066cc',
+              cyan: '#00b4d8',
+              ice: '#e0f2fe',
+              orange: '#ff6b35'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-cyan selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-brand-navy border-b border-slate-700 text-slate-200 text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-semibold bg-red-500/20 text-red-400 border border-red-500/30">
+          <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+          24/7 Valley-Wide Emergency Dispatch
+        </span>
+        <span class="hidden md:inline text-slate-400">|</span>
+        <span class="hidden md:inline text-slate-300">Fast Response across Mesa & East Valley</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:4805550199" class="font-bold text-white hover:text-brand-cyan transition-colors flex items-center gap-1">
+          <i class="fa-solid fa-phone-volume text-brand-orange"></i> (480) 555-0199
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-navy via-brand-blue to-brand-cyan flex items-center justify-center text-white text-2xl shadow-md group-hover:scale-105 transition-transform">
+            <i class="fa-solid fa-snowflake"></i>
+          </div>
+          <div>
+            <span class="block font-black text-xl sm:text-2xl text-brand-navy tracking-tight font-heading leading-tight">PETERSON</span>
+            <span class="block text-xs font-bold text-brand-cyan tracking-widest uppercase">Air Conditioning</span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="text-slate-600 font-semibold hover:text-brand-blue transition-colors">Home</a>
+          <a href="services.html" class="text-brand-blue font-bold hover:text-brand-blue transition-colors">Services</a>
+          <a href="about.html" class="text-slate-600 font-semibold hover:text-brand-blue transition-colors">About Us</a>
+          <a href="service-areas.html" class="text-slate-600 font-semibold hover:text-brand-blue transition-colors">Service Areas</a>
+          <a href="contact.html" class="text-slate-600 font-semibold hover:text-brand-blue transition-colors">Contact</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="tel:4805550199" class="inline-flex items-center gap-2 bg-brand-orange hover:bg-orange-600 text-white font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all">
+            <i class="fa-solid fa-phone"></i>
+            <span>(480) 555-0199</span>
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="lg:hidden text-slate-700 p-2 rounded-lg hover:bg-slate-100" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+      <a href="index.html" class="block py-2 text-slate-700 font-semibold text-lg border-b border-slate-100">Home</a>
+      <a href="services.html" class="block py-2 text-brand-blue font-bold text-lg border-b border-slate-100">Services</a>
+      <a href="about.html" class="block py-2 text-slate-700 font-semibold text-lg border-b border-slate-100">About Us</a>
+      <a href="service-areas.html" class="block py-2 text-slate-700 font-semibold text-lg border-b border-slate-100">Service Areas</a>
+      <a href="contact.html" class="block py-2 text-slate-700 font-semibold text-lg border-b border-slate-100">Contact</a>
+      <div class="pt-2">
+        <a href="tel:4805550199" class="w-full block text-center bg-brand-orange text-white font-bold py-3 rounded-xl shadow">
+          <i class="fa-solid fa-phone mr-2"></i> Call (480) 555-0199
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="bg-brand-navy text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest">Complete Cooling & Heating Solutions</span>
+      <h1 class="text-3xl sm:text-5xl font-black font-heading mt-2">HVAC Services by Peterson Air</h1>
+      <p class="text-slate-300 max-w-2xl mx-auto mt-4 text-base sm:text-lg">
+        Fast, professional residential and commercial air conditioning services built to withstand extreme Arizona temperatures.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Deep-Dive Section -->
+  <section class="py-16 space-y-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+      <!-- 1. Emergency AC Repair -->
+      <div id="repair" class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center scroll-mt-28">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-red-100 text-red-700 font-bold text-xs uppercase px-3 py-1 rounded-full mb-4">
+            <i class="fa-solid fa-truck-fast"></i> 24/7 Rapid Emergency Response
+          </div>
+          <h2 class="text-3xl font-black text-brand-navy font-heading mb-4">24/7 Emergency AC Repair</h2>
+          <p class="text-slate-600 leading-relaxed mb-6">
+            When summer temperatures surpass 110°F in Mesa, a broken air conditioner is an urgent household emergency. Peterson Air Conditioning offers round-the-clock repair with fully stocked diagnostic vehicles.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+            <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Capacitor & relay replacements
+            </div>
+            <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Refrigerant leak isolation & recharge
+            </div>
+            <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Condenser fan & blower motors
+            </div>
+            <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Frozen evaporator coil remediation
+            </div>
+          </div>
+          <a href="tel:4805550199" class="inline-flex items-center gap-2 bg-brand-orange text-white font-bold px-6 py-3 rounded-xl shadow hover:bg-orange-600 transition-colors">
+            <i class="fa-solid fa-phone"></i> Call for Immediate Repair
+          </a>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80" alt="Emergency AC Repair Peterson Air Conditioning" class="rounded-2xl shadow-lg w-full object-cover h-[350px]" />
+        </div>
+      </div>
+
+      <!-- 2. AC Installation & Replacement -->
+      <div id="installation" class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center scroll-mt-28">
+        <div class="order-2 lg:order-1">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="AC Unit Replacement Peterson Air" class="rounded-2xl shadow-lg w-full object-cover h-[350px]" />
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="inline-flex items-center gap-2 bg-blue-100 text-brand-blue font-bold text-xs uppercase px-3 py-1 rounded-full mb-4">
+            <i class="fa-solid fa-wind"></i> High-Efficiency Cooling
+          </div>
+          <h2 class="text-3xl font-black text-brand-navy font-heading mb-4">New AC System Installation & Replacement</h2>
+          <p class="text-slate-600 leading-relaxed mb-6">
+            If your current AC unit is over 10–12 years old, frequently breaking down, or driving up electric bills, upgrading to a modern SEER2 system can slash cooling expenses and dramatically improve comfort.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+            <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Custom Manual J load calculations
+            </div>
+            <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Single, two-stage & variable speed
+            </div>
+            <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Leading brand warranties (10-year parts)
+            </div>
+            <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Free in-home replacement estimates
+            </div>
+          </div>
+          <a href="contact.html#quote" class="inline-flex items-center gap-2 bg-brand-navy text-white font-bold px-6 py-3 rounded-xl shadow hover:bg-brand-blue transition-colors">
+            Request Free Replacement Estimate
+          </a>
+        </div>
+      </div>
+
+      <!-- 3. Seasonal Maintenance Tune-Up -->
+      <div id="tuneup" class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center scroll-mt-28">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 font-bold text-xs uppercase px-3 py-1 rounded-full mb-4">
+            <i class="fa-solid fa-wrench"></i> Preventative Protection
+          </div>
+          <h2 class="text-3xl font-black text-brand-navy font-heading mb-4">21-Point Seasonal AC Tune-Up</h2>
+          <p class="text-slate-600 leading-relaxed mb-6">
+            Regular maintenance extends equipment life by up to 40% and keeps electricity costs down. Our 21-point check optimizes every electrical and mechanical component before summer peak demand.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+            <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Condenser coil power washing
+            </div>
+            <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Condensate drain flush & treatment
+            </div>
+            <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Amp draw & capacitor testing
+            </div>
+            <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Refrigerant pressure verification
+            </div>
+          </div>
+          <a href="contact.html" class="inline-flex items-center gap-2 bg-brand-navy text-white font-bold px-6 py-3 rounded-xl shadow hover:bg-brand-blue transition-colors">
+            Book Seasonal Tune-Up
+          </a>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="HVAC Maintenance Tune-Up" class="rounded-2xl shadow-lg w-full object-cover h-[350px]" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="bg-brand-navy text-white py-14">
+    <div class="max-w-4xl mx-auto px-4 text-center space-y-6">
+      <h2 class="text-3xl font-black font-heading">Need Fast Service or an Estimate?</h2>
+      <p class="text-slate-300 text-base">Contact Peterson Air Conditioning today for fast, honest service.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 pt-2">
+        <a href="tel:4805550199" class="bg-brand-orange hover:bg-orange-600 text-white font-bold px-8 py-3.5 rounded-xl shadow transition-all">
+          <i class="fa-solid fa-phone mr-2"></i> (480) 555-0199
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-dark text-slate-400 text-sm pt-12 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-4">
+      <span class="font-black text-lg text-white font-heading">PETERSON AIR CONDITIONING</span>
+      <p class="text-xs">&copy; 2026 Peterson Air Conditioning. Mesa & Phoenix Valley HVAC Services.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
