@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>HVAC Services | Peterson Air Conditioning | Mesa & Phoenix AZ</title>
-  <meta name="description" content="Expert air conditioning repair, installation, seasonal tune-ups, heat pump services, and duct sealing across Mesa, Gilbert, Chandler, and Phoenix. Call (480) 555-0199." />
-  <meta name="keywords" content="HVAC services Mesa, AC repair Phoenix, emergency AC replacement Arizona, heat pump installation, AC tune-up Mesa AZ, Peterson Air Conditioning services" />
+  <title>HVAC Services | Peterson Air Conditioning | Call (602) 418-4215</title>
+  <meta name="description" content="Expert air conditioning repair, installation, seasonal tune-ups, heat pump services, and duct sealing across Mesa, Gilbert, Chandler, and Phoenix. Call (602) 418-4215." />
+  <meta name="keywords" content="HVAC services Mesa, AC repair Phoenix, emergency AC replacement Arizona, heat pump installation, AC tune-up Mesa AZ, Peterson Air Conditioning 602-418-4215" />
   <meta name="robots" content="index, follow" />
 
   <!-- Tailwind CSS CDN -->
@@ -39,14 +39,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    .pulse-orange {
+      animation: pulseGlow 2s infinite;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.7); }
+      50% { box-shadow: 0 0 0 14px rgba(255, 107, 53, 0); }
+    }
+  </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-cyan selection:text-white">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-cyan selection:text-white pb-20 sm:pb-0">
 
   <!-- Top Announcement Bar -->
-  <div class="bg-brand-navy border-b border-slate-700 text-slate-200 text-xs sm:text-sm py-2 px-4">
+  <div class="bg-brand-navy border-b border-slate-700 text-slate-200 text-xs sm:text-sm py-2.5 px-4">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
       <div class="flex items-center gap-2">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-semibold bg-red-500/20 text-red-400 border border-red-500/30">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-red-500/20 text-red-400 border border-red-500/30">
           <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
           24/7 Valley-Wide Emergency Dispatch
         </span>
@@ -54,8 +64,8 @@
         <span class="hidden md:inline text-slate-300">Fast Response across Mesa & East Valley</span>
       </div>
       <div class="flex items-center gap-4">
-        <a href="tel:4805550199" class="font-bold text-white hover:text-brand-cyan transition-colors flex items-center gap-1">
-          <i class="fa-solid fa-phone-volume text-brand-orange"></i> (480) 555-0199
+        <a href="tel:6024184215" class="font-extrabold text-white hover:text-brand-cyan transition-colors flex items-center gap-1 text-sm sm:text-base">
+          <i class="fa-solid fa-phone-volume text-brand-orange"></i> (602) 418-4215
         </a>
       </div>
     </div>
@@ -64,14 +74,14 @@
   <!-- Header -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-20">
-        <a href="index.html" class="flex items-center gap-3 group">
-          <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-navy via-brand-blue to-brand-cyan flex items-center justify-center text-white text-2xl shadow-md group-hover:scale-105 transition-transform">
-            <i class="fa-solid fa-snowflake"></i>
+      <div class="flex justify-between items-center h-20 sm:h-24">
+        <a href="index.html" class="flex items-center gap-3 group py-2">
+          <div class="bg-white p-1 rounded-xl shadow-sm border border-slate-100 flex items-center justify-center">
+            <img src="./images/logo.png" alt="Peterson Air Conditioning Logo" class="h-12 sm:h-16 w-auto object-contain" />
           </div>
           <div>
             <span class="block font-black text-xl sm:text-2xl text-brand-navy tracking-tight font-heading leading-tight">PETERSON</span>
-            <span class="block text-xs font-bold text-brand-cyan tracking-widest uppercase">Air Conditioning</span>
+            <span class="block text-xs font-bold text-brand-blue tracking-widest uppercase">Air Conditioning</span>
           </div>
         </a>
 
@@ -84,9 +94,9 @@
         </nav>
 
         <div class="hidden sm:flex items-center gap-3">
-          <a href="tel:4805550199" class="inline-flex items-center gap-2 bg-brand-orange hover:bg-orange-600 text-white font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all">
-            <i class="fa-solid fa-phone"></i>
-            <span>(480) 555-0199</span>
+          <a href="tel:6024184215" class="pulse-orange inline-flex items-center gap-2 bg-brand-orange hover:bg-orange-600 text-white font-extrabold px-6 py-3 rounded-xl shadow-lg transition-all text-base">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>(602) 418-4215</span>
           </a>
         </div>
 
@@ -103,9 +113,9 @@
       <a href="about.html" class="block py-2 text-slate-700 font-semibold text-lg border-b border-slate-100">About Us</a>
       <a href="service-areas.html" class="block py-2 text-slate-700 font-semibold text-lg border-b border-slate-100">Service Areas</a>
       <a href="contact.html" class="block py-2 text-slate-700 font-semibold text-lg border-b border-slate-100">Contact</a>
-      <div class="pt-2">
-        <a href="tel:4805550199" class="w-full block text-center bg-brand-orange text-white font-bold py-3 rounded-xl shadow">
-          <i class="fa-solid fa-phone mr-2"></i> Call (480) 555-0199
+      <div class="pt-3">
+        <a href="tel:6024184215" class="w-full text-center bg-brand-orange text-white font-black py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 text-lg">
+          <i class="fa-solid fa-phone mr-2"></i> Call (602) 418-4215
         </a>
       </div>
     </div>
@@ -117,7 +127,7 @@
       <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest">Complete Cooling & Heating Solutions</span>
       <h1 class="text-3xl sm:text-5xl font-black font-heading mt-2">HVAC Services by Peterson Air</h1>
       <p class="text-slate-300 max-w-2xl mx-auto mt-4 text-base sm:text-lg">
-        Fast, professional residential and commercial air conditioning services built to withstand extreme Arizona temperatures.
+        Fast, professional residential and commercial air conditioning services. Call <a href="tel:6024184215" class="font-bold text-white underline">(602) 418-4215</a> to schedule.
       </p>
     </div>
   </section>
@@ -127,18 +137,18 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
 
       <!-- 1. Emergency AC Repair -->
-      <div id="repair" class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center scroll-mt-28">
+      <div id="repair" class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div>
           <div class="inline-flex items-center gap-2 bg-red-100 text-red-700 font-bold text-xs uppercase px-3 py-1 rounded-full mb-4">
             <i class="fa-solid fa-truck-fast"></i> 24/7 Rapid Emergency Response
           </div>
           <h2 class="text-3xl font-black text-brand-navy font-heading mb-4">24/7 Emergency AC Repair</h2>
           <p class="text-slate-600 leading-relaxed mb-6">
-            When summer temperatures surpass 110°F in Mesa, a broken air conditioner is an urgent household emergency. Peterson Air Conditioning offers round-the-clock repair with fully stocked diagnostic vehicles.
+            When summer temperatures surpass 110°F in Mesa and Phoenix, a broken air conditioner is an urgent emergency. Peterson Air Conditioning offers round-the-clock repair with fully stocked diagnostic vehicles.
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
             <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
-              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Capacitor & relay replacements
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Capacitor & contactor replacements
             </div>
             <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
               <i class="fa-solid fa-circle-check text-brand-cyan"></i> Refrigerant leak isolation & recharge
@@ -147,11 +157,11 @@
               <i class="fa-solid fa-circle-check text-brand-cyan"></i> Condenser fan & blower motors
             </div>
             <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
-              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Frozen evaporator coil remediation
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Frozen evaporator coil service
             </div>
           </div>
-          <a href="tel:4805550199" class="inline-flex items-center gap-2 bg-brand-orange text-white font-bold px-6 py-3 rounded-xl shadow hover:bg-orange-600 transition-colors">
-            <i class="fa-solid fa-phone"></i> Call for Immediate Repair
+          <a href="tel:6024184215" class="pulse-orange inline-flex items-center gap-2 bg-brand-orange text-white font-extrabold px-6 py-3.5 rounded-xl shadow-lg hover:bg-orange-600 transition-colors text-base">
+            <i class="fa-solid fa-phone-volume"></i> Call (602) 418-4215 for Fast Repair
           </a>
         </div>
         <div>
@@ -160,7 +170,7 @@
       </div>
 
       <!-- 2. AC Installation & Replacement -->
-      <div id="installation" class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center scroll-mt-28">
+      <div id="installation" class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div class="order-2 lg:order-1">
           <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="AC Unit Replacement Peterson Air" class="rounded-2xl shadow-lg w-full object-cover h-[350px]" />
         </div>
@@ -170,7 +180,7 @@
           </div>
           <h2 class="text-3xl font-black text-brand-navy font-heading mb-4">New AC System Installation & Replacement</h2>
           <p class="text-slate-600 leading-relaxed mb-6">
-            If your current AC unit is over 10–12 years old, frequently breaking down, or driving up electric bills, upgrading to a modern SEER2 system can slash cooling expenses and dramatically improve comfort.
+            If your current AC unit is over 10–12 years old, frequently breaking down, or driving up electric bills, upgrading to a modern SEER2 system can slash cooling expenses and improve indoor comfort.
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
             <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
@@ -180,34 +190,34 @@
               <i class="fa-solid fa-circle-check text-brand-cyan"></i> Single, two-stage & variable speed
             </div>
             <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
-              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Leading brand warranties (10-year parts)
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Quality equipment & warranties
             </div>
             <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
               <i class="fa-solid fa-circle-check text-brand-cyan"></i> Free in-home replacement estimates
             </div>
           </div>
-          <a href="contact.html#quote" class="inline-flex items-center gap-2 bg-brand-navy text-white font-bold px-6 py-3 rounded-xl shadow hover:bg-brand-blue transition-colors">
-            Request Free Replacement Estimate
+          <a href="tel:6024184215" class="inline-flex items-center gap-2 bg-brand-navy text-white font-bold px-6 py-3.5 rounded-xl shadow hover:bg-brand-blue transition-colors text-base">
+            <i class="fa-solid fa-phone"></i> Call (602) 418-4215 For Free Estimate
           </a>
         </div>
       </div>
 
       <!-- 3. Seasonal Maintenance Tune-Up -->
-      <div id="tuneup" class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center scroll-mt-28">
+      <div id="tuneup" class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div>
           <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 font-bold text-xs uppercase px-3 py-1 rounded-full mb-4">
             <i class="fa-solid fa-wrench"></i> Preventative Protection
           </div>
-          <h2 class="text-3xl font-black text-brand-navy font-heading mb-4">21-Point Seasonal AC Tune-Up</h2>
+          <h2 class="text-3xl font-black text-brand-navy font-heading mb-4">Seasonal AC Tune-Ups</h2>
           <p class="text-slate-600 leading-relaxed mb-6">
-            Regular maintenance extends equipment life by up to 40% and keeps electricity costs down. Our 21-point check optimizes every electrical and mechanical component before summer peak demand.
+            Regular maintenance extends equipment life and keeps electricity costs down. Our multi-point check inspects every electrical and mechanical component before summer peak demand.
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
             <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
               <i class="fa-solid fa-circle-check text-brand-cyan"></i> Condenser coil power washing
             </div>
             <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
-              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Condensate drain flush & treatment
+              <i class="fa-solid fa-circle-check text-brand-cyan"></i> Condensate drain flush
             </div>
             <div class="flex items-center gap-2 text-sm text-slate-700 font-medium">
               <i class="fa-solid fa-circle-check text-brand-cyan"></i> Amp draw & capacitor testing
@@ -216,8 +226,8 @@
               <i class="fa-solid fa-circle-check text-brand-cyan"></i> Refrigerant pressure verification
             </div>
           </div>
-          <a href="contact.html" class="inline-flex items-center gap-2 bg-brand-navy text-white font-bold px-6 py-3 rounded-xl shadow hover:bg-brand-blue transition-colors">
-            Book Seasonal Tune-Up
+          <a href="tel:6024184215" class="inline-flex items-center gap-2 bg-brand-navy text-white font-bold px-6 py-3.5 rounded-xl shadow hover:bg-brand-blue transition-colors text-base">
+            <i class="fa-solid fa-phone"></i> Schedule Tune-Up: (602) 418-4215
           </a>
         </div>
         <div>
@@ -228,14 +238,17 @@
     </div>
   </section>
 
-  <!-- CTA Banner -->
+  <!-- Big Call to Action -->
   <section class="bg-brand-navy text-white py-14">
     <div class="max-w-4xl mx-auto px-4 text-center space-y-6">
-      <h2 class="text-3xl font-black font-heading">Need Fast Service or an Estimate?</h2>
-      <p class="text-slate-300 text-base">Contact Peterson Air Conditioning today for fast, honest service.</p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4 pt-2">
-        <a href="tel:4805550199" class="bg-brand-orange hover:bg-orange-600 text-white font-bold px-8 py-3.5 rounded-xl shadow transition-all">
-          <i class="fa-solid fa-phone mr-2"></i> (480) 555-0199
+      <div class="bg-white p-3 rounded-2xl inline-block max-w-[180px] mx-auto shadow-md">
+        <img src="./images/logo.png" alt="Peterson Air Conditioning" class="w-full h-auto object-contain" />
+      </div>
+      <h2 class="text-3xl font-black font-heading">Ready to Schedule Your AC Service?</h2>
+      <p class="text-slate-300 text-base">Call Peterson Air Conditioning directly for fast dispatch across the East Valley.</p>
+      <div class="pt-2">
+        <a href="tel:6024184215" class="pulse-orange bg-brand-orange hover:bg-orange-600 text-white font-black px-8 py-4 rounded-xl shadow-xl transition-all inline-flex items-center gap-3 text-xl sm:text-2xl">
+          <i class="fa-solid fa-phone-volume"></i> (602) 418-4215
         </a>
       </div>
     </div>
@@ -244,10 +257,23 @@
   <!-- Footer -->
   <footer class="bg-brand-dark text-slate-400 text-sm pt-12 pb-8 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-4">
-      <span class="font-black text-lg text-white font-heading">PETERSON AIR CONDITIONING</span>
-      <p class="text-xs">&copy; 2026 Peterson Air Conditioning. Mesa & Phoenix Valley HVAC Services.</p>
+      <div class="flex items-center gap-3">
+        <div class="bg-white p-1 rounded-lg">
+          <img src="./images/logo.png" alt="Peterson Air Conditioning" class="h-8 w-auto" />
+        </div>
+        <span class="font-black text-lg text-white font-heading">PETERSON AIR</span>
+      </div>
+      <p class="text-xs">&copy; 2026 Peterson Air Conditioning. Mesa & Phoenix Valley.</p>
     </div>
   </footer>
+
+  <!-- Floating Mobile Call Bar -->
+  <div class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-brand-navy/95 backdrop-blur-md border-t border-slate-700 p-3 shadow-2xl">
+    <a href="tel:6024184215" class="w-full bg-brand-orange hover:bg-orange-600 text-white font-black py-3.5 px-4 rounded-xl text-center flex items-center justify-center gap-2 shadow-lg text-lg">
+      <i class="fa-solid fa-phone-volume text-xl animate-bounce"></i>
+      <span>Call (602) 418-4215</span>
+    </a>
+  </div>
 
   <script>
     const menuBtn = document.getElementById('mobile-menu-btn');
