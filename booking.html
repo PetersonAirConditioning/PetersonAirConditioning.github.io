@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon / Tab Icon -->
+  <link rel="icon" type="image/png" href="./images/logo.png" />
+  <link rel="apple-touch-icon" href="./images/logo.png" />
+
+  <title>Book an Appointment | Peterson Air Conditioning | Mesa & Phoenix HVAC</title>
+  <meta name="description" content="Book your AC repair, tune-up, or installation appointment online with Peterson Air Conditioning. Serving Mesa, Gilbert, Chandler, and Phoenix. Call (602) 418-4215." />
+  <meta name="keywords" content="book AC appointment Mesa AZ, schedule HVAC service Phoenix, Peterson Air Conditioning booking, AC repair appointment Gilbert Chandler" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Google Calendar Appointment Scheduling CSS -->
+  <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0b1d33',
+              dark: '#081424',
+              blue: '#0066cc',
+              cyan: '#00b4d8',
+              ice: '#e0f2fe',
+              orange: '#ff6b35',
+              amber: '#f7931a'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .pulse-orange {
+      animation: pulseGlow 2s infinite;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.7); }
+      50% { box-shadow: 0 0 0 14px rgba(255, 107, 53, 0); }
+    }
+    /* Style the Google Calendar button to blend nicely */
+    .booking-widget-wrapper .goog-inline-block {
+      width: 100%;
+    }
+    /* Make the scheduling button large and centered */
+    #booking-btn-target {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 60px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-cyan selection:text-white pb-20 sm:pb-0">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-brand-navy border-b border-slate-700 text-slate-200 text-xs sm:text-sm py-2.5 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-500/20 text-brand-cyan border border-brand-cyan/30">
+          <span class="w-2 h-2 rounded-full bg-brand-cyan animate-ping"></span>
+          Prompt Valley-Wide Dispatch
+        </span>
+        <span class="hidden md:inline text-slate-400">|</span>
+        <span class="hidden md:inline text-slate-300">Mesa • Gilbert • Chandler • Phoenix Metro</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="hidden sm:flex items-center gap-1.5 text-slate-300">
+          <i class="fa-solid fa-shield-halved text-brand-cyan"></i> Licensed • Service &amp; Installation
+        </span>
+        <a href="tel:6024184215" class="font-extrabold text-white hover:text-brand-cyan transition-colors flex items-center gap-1 text-sm sm:text-base">
+          <i class="fa-solid fa-phone-volume text-brand-orange animate-bounce"></i> (602) 418-4215
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20 sm:h-24">
+
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-3 group py-2">
+          <div class="bg-white p-1 rounded-xl shadow-sm border border-slate-100 flex items-center justify-center">
+            <img src="./images/logo.png" alt="Peterson Air Conditioning Logo" class="h-12 sm:h-16 w-auto object-contain" />
+          </div>
+          <div>
+            <span class="block font-black text-xl sm:text-2xl text-brand-navy tracking-tight font-heading leading-tight">PETERSON</span>
+            <span class="block text-xs font-bold text-brand-blue tracking-widest uppercase">Air Conditioning</span>
+          </div>
+        </a>
+
+        <!-- Desktop Menu Links -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="text-slate-600 font-semibold hover:text-brand-blue transition-colors">Home</a>
+          <a href="services.html" class="text-slate-600 font-semibold hover:text-brand-blue transition-colors">Services</a>
+          <a href="about.html" class="text-slate-600 font-semibold hover:text-brand-blue transition-colors">About Us</a>
+          <a href="service-areas.html" class="text-slate-600 font-semibold hover:text-brand-blue transition-colors">Service Areas</a>
+          <a href="contact.html" class="text-slate-600 font-semibold hover:text-brand-blue transition-colors">Contact</a>
+          <a href="booking.html" class="text-brand-blue font-bold hover:text-brand-blue transition-colors">Book Appointment</a>
+        </nav>
+
+        <!-- CTA Buttons -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="booking.html" class="inline-flex items-center gap-2 bg-brand-blue hover:bg-blue-700 text-white font-bold px-4 py-2.5 rounded-xl shadow transition-all text-sm">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Book Online</span>
+          </a>
+          <a href="tel:6024184215" class="pulse-orange inline-flex items-center gap-2 bg-brand-orange hover:bg-orange-600 text-white font-extrabold px-6 py-3 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 text-base">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>(602) 418-4215</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="lg:hidden text-slate-700 p-2 rounded-lg hover:bg-slate-100 focus:outline-none" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+      <a href="index.html" class="block py-2 text-slate-700 font-semibold text-lg border-b border-slate-100">Home</a>
+      <a href="services.html" class="block py-2 text-slate-700 font-semibold text-lg border-b border-slate-100">Services</a>
+      <a href="about.html" class="block py-2 text-slate-700 font-semibold text-lg border-b border-slate-100">About Us</a>
+      <a href="service-areas.html" class="block py-2 text-slate-700 font-semibold text-lg border-b border-slate-100">Service Areas</a>
+      <a href="contact.html" class="block py-2 text-slate-700 font-semibold text-lg border-b border-slate-100">Contact</a>
+      <a href="booking.html" class="block py-2 text-brand-blue font-bold text-lg border-b border-slate-100">Book Appointment</a>
+      <div class="pt-3 space-y-2">
+        <a href="booking.html" class="w-full text-center bg-brand-blue text-white font-black py-3 rounded-xl shadow flex items-center justify-center gap-2 text-base">
+          <i class="fa-solid fa-calendar-check"></i> Book Online
+        </a>
+        <a href="tel:6024184215" class="w-full text-center bg-brand-orange text-white font-black py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 text-lg">
+          <i class="fa-solid fa-phone-volume"></i> Call (602) 418-4215
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="bg-brand-navy text-white py-14 lg:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+      <span class="inline-flex items-center gap-2 bg-brand-cyan/20 border border-brand-cyan/40 px-4 py-1.5 rounded-full text-brand-cyan text-sm font-bold tracking-wide uppercase">
+        <i class="fa-solid fa-calendar-check"></i> Online Appointment Scheduling
+      </span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black font-heading leading-tight tracking-tight">
+        Book Your AC Service Appointment
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        Select a time that works best for you. For emergencies or immediate dispatch, call us directly at
+        <a href="tel:6024184215" class="text-brand-orange font-extrabold hover:text-orange-300 transition-colors">(602) 418-4215</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="bg-white py-12 border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-14 h-14 rounded-2xl bg-brand-ice text-brand-blue flex items-center justify-center text-2xl shadow-sm">
+            <i class="fa-solid fa-calendar-days"></i>
+          </div>
+          <h3 class="font-black text-brand-navy font-heading text-lg">1. Pick a Time</h3>
+          <p class="text-slate-500 text-sm">Choose an available date and time slot from our live calendar below.</p>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-14 h-14 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl shadow-sm">
+            <i class="fa-solid fa-clipboard-list"></i>
+          </div>
+          <h3 class="font-black text-brand-navy font-heading text-lg">2. Describe Your Issue</h3>
+          <p class="text-slate-500 text-sm">Add a brief note about your AC problem so we arrive prepared with the right parts.</p>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl shadow-sm">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h3 class="font-black text-brand-navy font-heading text-lg">3. We'll Confirm</h3>
+          <p class="text-slate-500 text-sm">You'll receive a confirmation email and we'll reach out to finalize the details.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Callout Banner -->
+  <div class="bg-brand-orange text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+      <div class="flex items-center gap-3">
+        <i class="fa-solid fa-triangle-exclamation text-2xl text-white/80"></i>
+        <div>
+          <span class="font-black text-lg">AC Emergency? Don't wait — call now for immediate dispatch.</span>
+          <span class="block text-sm text-orange-100">Mon–Sat, 7 AM–7 PM • Prompt Emergency Response</span>
+        </div>
+      </div>
+      <a href="tel:6024184215" class="shrink-0 inline-flex items-center gap-2 bg-white text-brand-orange font-black px-6 py-3 rounded-xl shadow-md hover:bg-orange-50 transition-colors text-lg">
+        <i class="fa-solid fa-phone-volume"></i> (602) 418-4215
+      </a>
+    </div>
+  </div>
+
+  <!-- Booking Widget Section -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-black text-brand-navy font-heading">Select Your Appointment</h2>
+        <p class="text-slate-500 mt-2 text-base">Our live scheduling calendar shows all available time slots.</p>
+      </div>
+
+      <!-- Google Calendar Booking Widget Card -->
+      <div class="bg-white rounded-3xl shadow-xl border border-slate-200 p-6 sm:p-10">
+
+        <!-- Service Type Choice Pills -->
+        <div class="mb-8">
+          <p class="text-sm font-bold text-slate-500 uppercase tracking-wider mb-3">What service do you need?</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-2 rounded-full bg-red-50 text-red-600 border border-red-200 text-sm font-semibold cursor-default">
+              <i class="fa-solid fa-bolt mr-1"></i>Emergency Repair
+            </span>
+            <span class="px-4 py-2 rounded-full bg-blue-50 text-brand-blue border border-blue-200 text-sm font-semibold cursor-default">
+              <i class="fa-solid fa-wind mr-1"></i>Installation / Replacement
+            </span>
+            <span class="px-4 py-2 rounded-full bg-amber-50 text-amber-700 border border-amber-200 text-sm font-semibold cursor-default">
+              <i class="fa-solid fa-wrench mr-1"></i>Tune-Up / Maintenance
+            </span>
+            <span class="px-4 py-2 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-sm font-semibold cursor-default">
+              <i class="fa-solid fa-temperature-half mr-1"></i>Heat Pump Service
+            </span>
+            <span class="px-4 py-2 rounded-full bg-slate-50 text-slate-600 border border-slate-200 text-sm font-semibold cursor-default">
+              <i class="fa-solid fa-lungs mr-1"></i>Ductwork / Airflow
+            </span>
+          </div>
+          <p class="text-xs text-slate-400 mt-2">Note your service type in the appointment description when booking.</p>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-slate-100 mb-8"></div>
+
+        <!-- Google Calendar Button -->
+        <div class="text-center space-y-4">
+          <p class="text-slate-600 font-medium text-base">Click the button below to open our live scheduling calendar:</p>
+          <div id="booking-btn-target" class="py-4">
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+            <script>
+            (function() {
+              var target = document.getElementById('booking-btn-target');
+              window.addEventListener('load', function() {
+                calendar.schedulingButton.load({
+                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0dOLgURA8rnE46u9otX7OXlqK-tv8R_N5zZP6NLSrfFyyrTFnt7CNLrnWg-m5pmvt5PTKuYl7h?gv=true',
+                  color: '#0066cc',
+                  label: 'Book an Appointment',
+                  target,
+                });
+              });
+            })();
+            </script>
+            <!-- end Google Calendar Appointment Scheduling -->
+          </div>
+          <p class="text-xs text-slate-400 max-w-sm mx-auto">
+            <i class="fa-solid fa-lock mr-1 text-emerald-500"></i>
+            Scheduling is powered by Google Calendar. You'll receive an email confirmation after booking.
+          </p>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-slate-100 my-8"></div>
+
+        <!-- Prefer to Call -->
+        <div class="text-center space-y-3">
+          <p class="text-slate-500 text-sm font-medium">Prefer to book by phone?</p>
+          <a href="tel:6024184215" class="pulse-orange inline-flex items-center gap-3 bg-brand-orange hover:bg-orange-600 text-white text-xl font-black px-8 py-4 rounded-2xl shadow-xl transition-all transform hover:-translate-y-0.5">
+            <i class="fa-solid fa-phone-volume text-xl"></i>
+            <span>Call (602) 418-4215</span>
+          </a>
+          <p class="text-xs text-slate-400">Mon – Sat: 7:00 AM – 7:00 PM</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Expect Section -->
+  <section class="py-16 bg-white border-t border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <span class="text-brand-blue font-extrabold text-sm uppercase tracking-wider">What to Expect</span>
+        <h2 class="text-3xl font-black text-brand-navy font-heading mt-2">Your Appointment, Our Promise</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex gap-4 items-start bg-slate-50 rounded-2xl p-6 border border-slate-200">
+          <div class="w-12 h-12 shrink-0 rounded-xl bg-brand-ice text-brand-blue flex items-center justify-center text-xl">
+            <i class="fa-solid fa-user-check"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-brand-navy text-lg mb-1">Experienced Technician</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">A skilled, licensed HVAC tech will arrive at your scheduled time ready to diagnose and fix your system.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start bg-slate-50 rounded-2xl p-6 border border-slate-200">
+          <div class="w-12 h-12 shrink-0 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-brand-navy text-lg mb-1">Upfront, Honest Pricing</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">No surprise fees. We'll give you a clear estimate before any work begins — no pressure, no games.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start bg-slate-50 rounded-2xl p-6 border border-slate-200">
+          <div class="w-12 h-12 shrink-0 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-brand-navy text-lg mb-1">On-Time Arrival</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">We respect your time. We show up when scheduled and communicate promptly if anything changes.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start bg-slate-50 rounded-2xl p-6 border border-slate-200">
+          <div class="w-12 h-12 shrink-0 rounded-xl bg-cyan-50 text-brand-cyan flex items-center justify-center text-xl">
+            <i class="fa-solid fa-thumbs-up"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-brand-navy text-lg mb-1">Single-Visit Repairs</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">We stock common parts and aim to complete most repairs in a single visit so your home cools down fast.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas Quick Row -->
+  <section class="py-10 bg-slate-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-slate-400 text-sm uppercase tracking-widest font-bold mb-4">We Serve Your Neighborhood</p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <span class="px-4 py-1.5 bg-slate-800 border border-slate-700 rounded-full text-sm font-semibold"><i class="fa-solid fa-location-dot text-brand-orange mr-1"></i>Mesa</span>
+        <span class="px-4 py-1.5 bg-slate-800 border border-slate-700 rounded-full text-sm font-semibold"><i class="fa-solid fa-location-dot text-brand-orange mr-1"></i>Gilbert</span>
+        <span class="px-4 py-1.5 bg-slate-800 border border-slate-700 rounded-full text-sm font-semibold"><i class="fa-solid fa-location-dot text-brand-orange mr-1"></i>Chandler</span>
+        <span class="px-4 py-1.5 bg-slate-800 border border-slate-700 rounded-full text-sm font-semibold"><i class="fa-solid fa-location-dot text-brand-orange mr-1"></i>Tempe</span>
+        <span class="px-4 py-1.5 bg-slate-800 border border-slate-700 rounded-full text-sm font-semibold"><i class="fa-solid fa-location-dot text-brand-orange mr-1"></i>Scottsdale</span>
+        <span class="px-4 py-1.5 bg-slate-800 border border-slate-700 rounded-full text-sm font-semibold"><i class="fa-solid fa-location-dot text-brand-orange mr-1"></i>Phoenix</span>
+        <span class="px-4 py-1.5 bg-slate-800 border border-slate-700 rounded-full text-sm font-semibold"><i class="fa-solid fa-location-dot text-brand-orange mr-1"></i>Queen Creek</span>
+        <span class="px-4 py-1.5 bg-slate-800 border border-slate-700 rounded-full text-sm font-semibold"><i class="fa-solid fa-location-dot text-brand-orange mr-1"></i>Apache Junction</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-dark text-slate-400 text-sm pt-12 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-slate-800 items-center text-center md:text-left">
+        <div class="flex items-center justify-center md:justify-start gap-3">
+          <div class="bg-white p-1 rounded-lg">
+            <img src="./images/logo.png" alt="Peterson Air Conditioning" class="h-10 w-auto" />
+          </div>
+          <span class="font-black text-lg text-white font-heading">PETERSON AIR</span>
+        </div>
+        <div class="text-center">
+          <p class="text-xs text-slate-400">Serving Mesa, Gilbert, Chandler, Phoenix &amp; the East Valley</p>
+          <div class="flex justify-center gap-4 mt-3">
+            <a href="index.html" class="hover:text-white transition-colors">Home</a>
+            <a href="services.html" class="hover:text-white transition-colors">Services</a>
+            <a href="booking.html" class="text-brand-cyan hover:text-white transition-colors font-semibold">Book Online</a>
+            <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div class="text-center md:text-right">
+          <a href="tel:6024184215" class="text-white font-extrabold text-lg hover:text-brand-cyan transition-colors">
+            <i class="fa-solid fa-phone text-brand-orange mr-1"></i> (602) 418-4215
+          </a>
+          <p class="text-xs text-slate-500 mt-1">Mon–Sat: 7:00 AM – 7:00 PM</p>
+        </div>
+      </div>
+      <div class="pt-6 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Peterson Air Conditioning. Service &amp; Installation. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Sticky Mobile Bar (Call + Book) -->
+  <div class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-brand-navy/95 backdrop-blur-md border-t border-slate-700 p-3 shadow-2xl">
+    <div class="grid grid-cols-2 gap-2">
+      <a href="tel:6024184215" class="bg-brand-orange text-white font-black py-3.5 px-3 rounded-xl text-center flex items-center justify-center gap-2 shadow-lg text-base">
+        <i class="fa-solid fa-phone-volume text-lg animate-bounce"></i>
+        <span>Call Now</span>
+      </a>
+      <a href="#booking-btn-target" class="bg-brand-blue text-white font-black py-3.5 px-3 rounded-xl text-center flex items-center justify-center gap-2 shadow-lg text-base">
+        <i class="fa-solid fa-calendar-check text-lg"></i>
+        <span>Book Online</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
